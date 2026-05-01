@@ -32,7 +32,7 @@ def generate_trades(n=1000):
 df = generate_trades()
 table = pa.Table.from_pandas(df)
 
-# set up S3 file system
+# set up S3 fileystem
 fs = s3fs.S3FileSystem(
     anon=False,
     use_ssl=True,
@@ -45,7 +45,7 @@ fs = s3fs.S3FileSystem(
     }
 )
 
-s3_filepath = 'my-data-lake-raw-026090555251-us-east-1-an'
+s3_filepath = 'my-data-lake-raw-026090555251-us-east-1-an/trades'
 
 pq.write_to_dataset(
     table,
