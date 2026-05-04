@@ -42,4 +42,4 @@ enriched_df.show(5)
 # write enriched results
 enriched_df.write.mode("overwrite") \
            .partitionBy("date") \
-           .parquet("s3a://my-data-lake-raw-026090555251-us-east-1-an/trades_analytical/")
+           .parquet("s3a://my-data-lake-processed-026090555251-us-east-1-an/trades_analytical/")
