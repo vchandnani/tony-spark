@@ -1,6 +1,6 @@
 # Tony Spark
 
-Technology Playground: Python, PySpark, S3, and Parquet Files.
+Technology Playground: Python, PySpark, Parquet Files, and AWS S3.
 
 ## High-Level Design
 
